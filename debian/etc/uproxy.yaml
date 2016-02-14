@@ -1,0 +1,10 @@
+proxyList: /etc/proxy.list
+check:
+    url: http://dev.brandspotter.ru/proxy
+    string: FriendshipIsMagic
+    interval: 20m
+    timeout: 5s
+bind: "0.0.0.0:8888"
+workersCount: 20
+maxTry: 2
+debug: false

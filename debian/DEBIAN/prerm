@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ "$1" = "upgrade" -o "$1" = "remove" ]
+then
+    /etc/init.d/uproxy stop
+fi

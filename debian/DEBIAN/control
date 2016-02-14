@@ -1,0 +1,8 @@
+Package: uproxy
+Version: 0.0.1-1
+Section: base
+Priority: optional
+Architecture: all
+Depends: bash 
+Maintainer: Mihail Samoylov <mihail.samoylov@gmail.com>
+Description: Simple cascade proxy with upstream checking

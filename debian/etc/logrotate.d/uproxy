@@ -1,0 +1,7 @@
+/var/log/uproxy.log {
+    missingok
+    copytruncate
+    rotate 3
+    compress
+    notifempty
+}
