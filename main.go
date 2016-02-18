@@ -132,13 +132,13 @@ func request(w http.ResponseWriter, r *http.Request) {
 	//req.URL.Scheme = "http"
 	req.Close = true
 	req.RequestURI = ""
-	/*
-		r.Header.Del("Accept-Encoding")
-		r.Header.Del("Proxy-Connection")
-		r.Header.Del("Proxy-Authenticate")
-		r.Header.Del("Proxy-Authorization")
-		r.Header.Del("Connection")
-		r.Header.Del("Content-Length")*/
+
+	r.Header.Del("Accept-Encoding")
+	r.Header.Del("Proxy-Connection")
+	r.Header.Del("Proxy-Authenticate")
+	r.Header.Del("Proxy-Authorization")
+	r.Header.Del("Connection")
+	//	r.Header.Del("Content-Length")
 
 	copyHeader(req.Header, r.Header)
 
