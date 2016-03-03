@@ -1,7 +1,11 @@
 /var/log/uproxy.log {
+    rotate 7
+    daily
     missingok
     copytruncate
-    rotate 3
     compress
     notifempty
+    postrotate
+          /etc/init.d/uproxy restart
+    endscript
 }
